@@ -1,0 +1,16 @@
+{
+    "backend_port": "7070",
+    "mysql": {
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "root",
+        "password": "password",
+        "name": "bilerplate",
+        "max_idle_con": 5,
+        "max_open_con": 10
+    },
+    "jwt": {
+        "secret": "keepItSecret",
+        "expired_at": 1440
+    }
+}
