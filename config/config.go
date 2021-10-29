@@ -10,7 +10,7 @@ import (
 
 // struct config like in config json
 type AppConfig struct {
-	BackendPort string `json:"backend_port"`
+	BackendPort int `json:"backend_port"`
 	Mysql       struct {
 		Host              string `json:"host"`
 		Port              string `json:"port"`
@@ -51,7 +51,7 @@ func GetConfig() *AppConfig {
 func initConfig() *AppConfig {
 	var defaultConfig AppConfig
 
-	defaultConfig.BackendPort = "7070"
+	defaultConfig.BackendPort = 7070
 
 	defaultConfig.Mysql.Host = "127.0.0.1"
 	defaultConfig.Mysql.Port = "3306"
